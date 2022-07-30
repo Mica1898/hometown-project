@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Retro;
+    src: url(RetroSignature-2ODoK.otf) format("opentype");
+}
+
+body {
+    margin: 0 auto;
+    background: #137878;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    font-size: 20px;
+}
+
+#banner {
+    background: url("https://images.unsplash.com/photo-1635350655735-b10922bec873?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1227&q=80");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     line-height: 100px;
+     position: relative;
+    
+}
+
+#banner h3 {
+    color: white;
+    letter-spacing: 8px;
+    text-shadow: 0px 0px 2px black;
+    font-size: 25px;
+
+}
+
+#banner h1 {
+    font-family: "Retro";
+    font-size: 150px;
+    color: pink;
+    text-shadow: 0px 0px 8px pink;
+    text-align: center;
+
+}
+
+.curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.curve svg {
+    position: relative;
+    display: block;
+    width: calc(175% + 1.3px);
+    height: 83px;
+}
+
+.curve .shape-fill {
+    fill: #137878;
+}
+
+
+#activities {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#activities h1 {
+    line-height: 90px;
+}
+
+.activity-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+@media only screen and (max-width:775px) {
+    .activity-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tourguide-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
+
+.activity-box {
+    max-width: 200px;
+    padding: 40px;
+}
+
+
+.activity-box img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    padding: 10px 0px 20px 0px;
+}
+
+#activities h1 {
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+
+}
+
+.underline {
+    border-bottom: 4px solid pink;
+    border-radius: 1px;
+}
+
+#activities h5 {
+    font-family: "Retro";
+    font-size: 80px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+
+}
+
+.palm-logo {
+    font-family: "Retro";
+    font-size: 90px;
+    color: pink;
+    text-shadow: 0px 0px 8px pink;
+}
+
+hr {
+  width: 200px;
+  margin: 30px 0px;
+  border: 1px solid pink;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px pink;
+  padding: 0;  
+
+}
+    
+
+.tourguide-bg {
+    display: block;
+    position: relative;
+  }
+  
+  .tourguide-bg::after {
+    content: "";
+    background-image: url("https://images.unsplash.com/photo-1621881806763-1b8128f374a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.tourguide-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.tourguide-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+#tourguide h5 {
+    font-size: 18px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+
+}
+
+.tourguide-info h1 {
+    font-family: "Retro";
+    font-size: 90px;
+    color: pink;
+    text-shadow: 0px 0px 10px pink;
+    margin: 10px 0px;
+}
+
+#tourguide p {
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+
+}
+
+
+.tourguide-container img {
+    width: 350px;
+}
+
+.tourguide-quotes {
+    width: 300px;
+    font-size: 25px;
+}
+
+
+#speech-bubble {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;;
+}
